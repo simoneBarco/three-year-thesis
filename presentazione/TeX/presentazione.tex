@@ -1,0 +1,45 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english, italian]{babel}
+\usepackage{tikz}
+
+\setcounter{tocdepth}{1}
+
+\definecolor{azzurro}{HTML}{E6E6FF}
+
+\usetheme[compress]{Berlin}
+\beamertemplatenavigationsymbolsempty
+
+\title{Piattaforma di video streaming per assistenza da remoto su dispositivi wearable}
+\author{Simone Barco}
+\institute[Università degli Studi di Padova]
+{
+	Dipartimento di Matematica "Tullio Levi-Civita"\\
+	Corso di Laurea in Informatica
+}
+\date{Padova, 27 febbraio 2018}
+
+
+\begin{document}
+	\begin{frame}[noframenumbering, plain]
+		\titlepage
+	\end{frame}
+
+	\begin{frame}[noframenumbering]{Indice dei contenuti}
+		\tableofcontents
+	\end{frame}
+
+	\addtobeamertemplate{navigation symbols}{}{%
+		\usebeamerfont{footline}%
+		\usebeamercolor[fg]{footline}%
+		\hspace{1em}%
+		\insertframenumber/\inserttotalframenumber
+	}
+
+	\input{capitolo_1/capitolo_1.tex}
+	\input{capitolo_2/capitolo_2.tex}
+	\input{capitolo_3/capitolo_3.tex}
+	\input{capitolo_4/capitolo_4.tex}
+\end{document}

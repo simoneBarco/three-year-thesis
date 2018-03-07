@@ -1,0 +1,4 @@
+#!/bin/bash
+cd TeX
+pdflatex -output-directory ../ presentazione.tex
+cd ..

@@ -1,0 +1,47 @@
+\documentclass[11pt,                    % corpo del font principale
+               a4paper,                 % carta A4
+               twoside,                 % impagina per fronte-retro
+               openright,               % inizio capitoli a destra
+               english,
+               italian,
+               ]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english, italian]{babel}
+\usepackage{graphicx}                   % immagini
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\definecolor{mygreen}{rgb}{0,0.5,0}
+\lstnewenvironment{codice_json}[1][]
+{\lstset{basicstyle=\small\ttfamily, columns=fullflexible,
+keywordstyle=\color{green}\bfseries, commentstyle=\color{violet}, stringstyle=\color{blue},
+language=Java, frame=single}}{}
+\lstnewenvironment{codice_java}[1][]
+{\lstset{basicstyle=\small\ttfamily, columns=fullflexible,
+keywordstyle=\color{blue}\bfseries, commentstyle=\color{mygreen}, stringstyle=\color{violet},
+language=Java, breaklines=true, breakatwhitespace=true,
+frame=single, morekeywords={*,EventBus,VertxOptions,EventBusOptions}}}{}
+\usepackage{hyperref}
+\input{tesi-config}
+\pagestyle{plain}
+\begin{document}
+  \frontmatter
+  \input{utils/frontespizio}
+  \input{utils/sommario}
+  \input{utils/ringraziamenti}
+  \pagenumbering{Roman}
+  \input{utils/indici}
+
+  \mainmatter
+  % \hypersetup{
+  %   linkcolor=blue
+  % }
+
+  \input{cap/cap1}
+  \input{cap/cap2}
+  \input{cap/cap3}
+  \input{cap/cap4}
+  \input{cap/glossario}
+  \input{cap/sitografia}
+\end{document}
